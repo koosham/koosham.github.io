@@ -7,7 +7,7 @@
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 		<link rel="icon" type="image/png" href="images/icon.png" />
 		<title>Koosha Marashi's Personal Website</title>
-
+		
 		<!-- Bootstrap -->
 		<link href="css/bootstrap-lumen.css" rel="stylesheet">
 		
@@ -19,32 +19,39 @@
 		
 		<!-- Google Maps -->
 		<style>
-      #map-canvas {
-        width: 100%;
-        height: 400px;
-      }
-    </style>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+			#map-canvas {
+				width: 100%;
+				height: 400px;
+			}
+		</style>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
     
 	
-	<script type="text/javascript">
+		<script type="text/javascript">
             google.maps.event.addDomListener(window, 'load', init);
             function init() {
-			var Latlng = new google.maps.LatLng(37.956718, -91.774518);
+				var erlLatLng = new google.maps.LatLng(37.9566065, -91.7745453);
                 var mapOptions = {
                     zoom: 15,
-                    center: Latlng,
+                    center: erlLatLng,
                     styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
                 };
                 var mapElement = document.getElementById('map-canvas');
                 var map = new google.maps.Map(mapElement, mapOptions);
+				var markerIcon = {
+					url: "images/map_marker.svg",
+					origin: new google.maps.Point(0, 0),
+					anchor: new google.maps.Point(24,48),
+					scaledSize: new google.maps.Size(48,48)
+				}
                 var marker = new google.maps.Marker({
-                    position: Latlng,
+                    position: erlLatLng,
                     map: map,
-                    title: 'Engineering Research Lab'
+					icon: markerIcon,
+					title: 'Engineering Research Lab'
                 });
             }
-        </script>
+		</script>
 
 
 
@@ -86,18 +93,18 @@
 			<div class="row">
 				<div class="col-xs-12">
 					<address>
-						<strong>Office</strong><br>
-						113 Engineering Research Lab, 500 W. 16th St. <br>
-						Rolla, MO 65409-6522 <br>
-						+1 (573) 341-6841
-					</address>
-
-					<address>
 						<i class="fa fa-envelope fa-lg fa-fw"></i> <strong>Email: </strong><a href="mailto:km89f@mst.edu" target="_blank">km89f@mst.edu</a><br>
 						<i class="fa fa-linkedin-square fa-lg fa-fw"></i> <strong>LinkedIn: </strong><a href="https://www.linkedin.com/in/koosham/" target="_blank">linkedin.com/in/koosham/</a><br>
 						<i class="ai ai-google-scholar-square ai-lg ai-fw"></i> <strong>Google Scholar: </strong><a href="https://scholar.google.com/citations?hl=en&user=luIJWdUAAAAJ" target="_blank">scholar.google.com/citations?user=luIJWdUAAAAJ</a><br>
 						<i class="ai ai-researchgate-square ai-lg ai-fw"></i> <strong>ResearchGate: </strong><a href="https://www.researchgate.net/profile/Koosha_Marashi" target="_blank">researchgate.net/profile/Koosha_Marashi</a><br>
 						<i class="fa fa-github-square fa-lg fa-fw"></i> <strong>GitHub: </strong><a href="https://github.com/koosham" target="_blank">github.com/koosham</a><br>
+					</address>
+					
+					<address>
+						<strong>Office</strong><br>
+						113 Engineering Research Lab, 500 W. 16th St. <br>
+						Rolla, MO 65409-6522 <br>
+						+1 (573) 341-6841
 					</address>
 				</div>
 				
