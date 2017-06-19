@@ -2365,4 +2365,4 @@ if (typeof jQuery === 'undefined') {
 
 // Added by Koosha
 
-var LastUpdate = "March 5, 2017";
+var LastUpdate = "June 18, 2017";
