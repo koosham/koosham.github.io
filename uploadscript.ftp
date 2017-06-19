@@ -1,0 +1,7 @@
+option echo off 
+option batch on 
+option confirm off 
+open sftp://km89f@minersftp.mst.edu
+lcd "Dropbox/Resume and CV/Koosha/"
+put -nopermissions -nopreservetime resume.pdf cv.pdf /userweb/km89f/cv/*
+exit
