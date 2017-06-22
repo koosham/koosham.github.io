@@ -1,21 +1,12 @@
 <!--?xml version="1.0" encoding="UTF-8"?-->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://web.mst.edu/~km89f/</loc>
+    <loc>https://koosham.github.io/</loc>
   </url>
   <url>
-    <loc>http://web.mst.edu/~km89f/research.html</loc>
+    <loc>https://koosham.github.io/projects.html</loc>
   </url>
   <url>
-    <loc>http://web.mst.edu/~km89f/coursework.html</loc>
-  </url>
-  <url>
-    <loc>http://web.mst.edu/~km89f/publications.html</loc>
-  </url>
-  <url>
-    <loc>http://web.mst.edu/~km89f/projects.html</loc>
-  </url>
-  <url>
-    <loc>http://web.mst.edu/~km89f/contact.html</loc>
+    <loc>https://koosham.github.io/publications.html</loc>
   </url>
 </urlset>
